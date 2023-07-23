@@ -32,8 +32,8 @@ void quick_sort_fun(int array[], int low, int high, size_t size)
 	if (low < high)
 	{
 		pos = partition(array, low, high, size);
+		quick_sort_fun(array, low, pos - 1, size);
 		quick_sort_fun(array, pos + 1, high, size);
-		quick_sort_fun(array, 0, pos - 1, size);
 	}
 }
 

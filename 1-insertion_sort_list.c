@@ -1,14 +1,14 @@
 #include "sort.h"
 
 /**
- *insertion_sort_list-sorts doubly linked list in ascending order with Insertion sort
+ *insertion_sort_list-sorts doubly linked list with Insertion sort
  *@list:pointer to pointer to a list
  *Return:void
  */
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *temp = NULL;
-        listint_t *current = NULL;
+	listint_t *current = NULL;
 
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
